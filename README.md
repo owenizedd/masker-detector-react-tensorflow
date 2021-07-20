@@ -1,4 +1,5 @@
-# masker-detector-react-tensorflow
+# Face mask detector with tensorflowjs
+
 Detect if a person wearing a face mask or not.
 
 This is not accurate detection, I use color similarity to check if a person wraing face mask.
