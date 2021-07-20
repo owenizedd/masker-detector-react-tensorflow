@@ -6,4 +6,4 @@ But it's enough to satisfy my personal needs.
 
 I think for accurate detection, we need a custom model that could detect if an face mask covering mouth and nose. Which is not possible in this project's model.
 
-I use blazeface model from tensorflowjs
+I use blazeface model from tensorflowjs with a not so sophisticated detection
