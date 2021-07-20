@@ -1,0 +1,20 @@
+.webcam{
+  width: 50%;
+  position: relative;
+  z-index: 1
+}
+.webcam-ai__container{
+  display: relative;
+}
+.webcam-ai__canvas{
+  width: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.webcam-color__canvas{
+  width: 50%;
+  opacity: 0;
+}
