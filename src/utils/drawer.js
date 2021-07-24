@@ -39,18 +39,15 @@ export const drawRectangle = (predictions, ctx, isUsingMasks) => {
     }
     
 
-    ctx.font = "30px Arial";
+    ctx.font = "14px Arial";
     if (isUsingMasks[index]){
       ctx.fillStyle='lightgreen';
-      ctx.fillText("Kamu memakai masker", prediction.topLeft[0], prediction.topLeft[1] - 30); 
+      ctx.fillText("You're wearing a face mask", prediction.topLeft[0], prediction.topLeft[1] - 30); 
     }
     else{
       ctx.fillStyle='lightred';
-      ctx.fillText("Kamu tidak memakai masker", prediction.topLeft[0], prediction.topLeft[1] - 30);
+      ctx.fillText("You're not wearing a face mask", prediction.topLeft[0], prediction.topLeft[1] - 30);
     }
-    
-
-
 
   });
 }
@@ -72,8 +69,6 @@ export const detectMaskByColors = (predictions, video, ctx) => {
       results.push(true);
     else results.push(false);
   })
-
-  return results;
 
   return results;
 }

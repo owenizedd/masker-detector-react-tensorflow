@@ -3,8 +3,8 @@ import './App.css'
 import * as blazeface from '@tensorflow-models/blazeface';
 import * as tf from '@tensorflow/tfjs';
 import { detectMaskByColors, drawRectangle } from './utils/drawer';
+import Webcam from 'react-webcam';
 
-import Webcam from 'react-webcam'
 function App() {
   const webcamRef = useRef();
   const canvasRef = useRef();
@@ -24,8 +24,6 @@ function App() {
         const ctx = canvasRef.current.getContext('2d');
 
         drawRectangle(predictions, ctx, isUsingMasks);  
-
-        
       }
     }
   }
@@ -42,7 +40,6 @@ function App() {
         <Webcam ref={webcamRef} className="webcam" width={1000}/>
         <canvas className="webcam-ai__canvas" ref={canvasRef}/>
         <canvas className="webcam-color__canvas" ref={canvas2Ref}/>
-
       </div>
     </div>
   )
